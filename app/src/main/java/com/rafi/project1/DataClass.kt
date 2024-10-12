@@ -13,4 +13,16 @@ data class DataClass(
 fun main(){
     val data = DataClass(1, "rafipilo17@gmail.com")
     println(data)
+
+    // Fungsi Equals
+    val data2 = DataClass(1, "pilo@gmail.com")
+    println(data == data2) // False
+
+    // Fungsi Copy
+    val data3 = data.copy()
+    println(data3)
+
+    // Fungsi Copy dengan perubahan
+    val data4 = data.copy(email = "rafi@gmail.com")
+    println(data4)
 }
